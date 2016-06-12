@@ -188,11 +188,11 @@ int	main()
 		printf("  = ");										// 결과치 출력
 		displayBigNumber (saveBigNumber[0]);
 
-		for (i = 0; i < nNumCount; i++);					// 변수용으로 잡은 메모리 삭제
+		for (i = 0; i < varCount; i++)					// 변수용으로 잡은 메모리 삭제
 			free(saveBigNumber[varCount].s_bigNumber );
 
 	}
-	for (i = 0; i < varCount; i++);							// 변수용으로 잡은 메모리 삭제
+	for (i = 0; i < varCount; i++)							// 변수용으로 잡은 메모리 삭제
 		free(varSaveArray[varCount].s_varbigNumber );
 
 }

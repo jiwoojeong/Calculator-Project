@@ -319,7 +319,7 @@ BIG_NUMBER_DECIMAL bigNumberMuliply(BIG_NUMBER_DECIMAL* A, BIG_NUMBER_DECIMAL* B
 			temp.s_bigNumber[j] = tempDigit.s_bigNumber[j-i];
 		temp.n_size = tempDigit.n_size+i;
 
-		free(tempDigit.s_bigNumber);
+		//free(tempDigit.s_bigNumber);
 
 		ptrTemp = result.s_bigNumber;
 		result = bigNumberADD(&result, &temp);
