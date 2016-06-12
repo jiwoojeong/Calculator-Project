@@ -54,7 +54,7 @@ int	main()
 			FILE *fp;
 			if ((fp = fopen ("valfile.txt", "wt")) == NULL)
 			{
-				printf("valfile.txt 오픈 에라. \n");
+				printf("valfile.txt 오픈 에러. \n");
 				continue;
 			}
 			varFileSave(fp, varSaveArray);
@@ -68,7 +68,7 @@ int	main()
 			FILE *fp;
 			if ((fp = fopen ("valfile.txt", "rt")) == NULL)
 			{
-				printf("valfile.txt 오픈 에라. \n");
+				printf("valfile.txt 오픈 에러. \n");
 				continue;
 			}
 			varFileRead(fp, varSaveArray);
@@ -185,7 +185,7 @@ int	main()
 
 		}
 		
-		printf("  = ");										// 결과치 출력
+		printf(" = ");										// 결과치 출력
 		displayBigNumber (saveBigNumber[0]);
 
 		for (i = 0; i < varCount; i++)					// 변수용으로 잡은 메모리 삭제
